@@ -1,6 +1,6 @@
 # arfy
 
-arfy description here
+Ensures that something is array
 
 [![Build Status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
@@ -15,6 +15,12 @@ npm i arfy
 
 ```js
 const arfy = require('arfy');
+
+console.log(arfy('test'));               // ['test']
+console.log(arfy(['test']));             // ['test']
+console.log(arfy(['test1', 'test2']));   // ['test1', 'test2']
+console.log(arfy());                     // []
+console.log(arfy(null));                 // []
 ```
 
 ## License
