@@ -21,6 +21,12 @@ console.log(arfy(['test']));             // ['test']
 console.log(arfy(['test1', 'test2']));   // ['test1', 'test2']
 console.log(arfy());                     // []
 console.log(arfy(null));                 // []
+
+console.log(arfy('test1', 'test2'));               // ['test1', 'test2']);
+console.log(arfy(['test1'], ['test2']));           // ['test1', 'test2']);
+console.log(arfy('test1', ['test2', 'test3']));    // ['test1', 'test2', 'test3']);
+console.log(arfy(['test1', 'test2'], [], null));   // ['test1', 'test2']);
+console.log(arfy(['test', ['test']]));             // ['test', ['test']]);
 ```
 
 ## License
